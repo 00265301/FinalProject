@@ -1,0 +1,229 @@
+#Amanda Clooney 00265301
+#final project
+#This program is a general knowledge quiz that will use various concepts from the semester
+
+import random
+from operator import add, sub, mul
+score = 0 #total variable
+score = int(score)
+
+o = (add, sub, mul)
+
+x = random.randint(0, 99)
+y = random.randint(0, 99)
+
+name = input("Hello, what is your name?\n")#user input 
+name = name.title()
+print("Hello {}! You are about to take a general knowledge quiz. Try your best and your score will be calculated at the end!".format(name))
+
+#1
+print("What is the capital of Australia?\n1. Sydney \n2. Canberra \n3. Victoria \n4. Mackay \n")
+
+answer1 = "2"
+response1 = input("Answer:")
+
+if (response1 != answer1):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#2
+print("Which artist created the painting 'The Night Watch'?\n1. Leonardo da Vinci \n2. Salvador Dali \n3. Picasso \n4. Rembrant \n")
+
+answer2 = "4"
+response2 = input("Answer:")
+
+if (response2 != answer2):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#3
+print("How many elements are on the periodic table?\n1. 120 \n2. 114 \n3. 118 \n4. 117 \n")
+
+answer3 = "3"
+response3 = input("Answer:")
+
+if (response3 != answer3):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#4
+print("Who was the last member to join The Beatles?\n1. John \n2. Paul \n3. George \n4. Ringo \n")
+
+answer4 = "4"
+response4 = input("Answer:")
+
+if (response4 != answer4):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#5
+print("What is the northmost inhabited place on earth?\n1. Longyerbyden \n2. Barentsburg \n3. Dawson City \n4. Yellowknife \n")
+
+answer5 = "1"
+response5 = input("Answer:")
+
+if (response5 != answer5):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#6 = incomplete
+print("What is", x, "*",y, "?\n")
+response6 = int(input("Answer:"))
+answer6 = o(x,y)
+if (response6 != answer6):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#7
+print("Who played Frankenstin in the 1931 film 'Frankenstein'?\n1. Boris Karloff \n2. Bela Lugosi \n3. Vincent Price \n4. Lon Chaney Jr. \n")
+
+answer7 = "1"
+response7 = input("Answer:")
+
+if (response7 != answer7):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#8 = incomplete
+print("What is 20 - 32? \n")
+
+answer8 = "-12"
+response8 = input("Answer:")
+
+if (response8 != answer8):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#9
+print("What is the name of the book by George Owell where the chracters are watched by big brother? \n")
+
+answer9 = "1984"
+response9 = input("Answer:")
+
+if (response9 != answer9):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#10
+print("What was the first Disney feature-lenght film?\n1. Bambi \n2. Snow White and the Seven Dwarves \n3. Dumbo \n4. Cinderella \n")
+
+answer10 = "2"
+response10 = input("Answer:")
+
+if (response10 != answer10):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#11
+print("What number does Roman numeral C stand for? \n")
+
+answer11 = "100"
+response11 = input("Answer:")
+
+if (response11 != answer11):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#12
+print("What color is made when blue and yellow are mixed? \n1. Red \n2. Orange \n3. Green \n4. Purple \n")
+
+answer12 = "3"
+response12 = input("Answer:")
+
+if (response12 != answer12):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#13 incomplete variable
+print("What is the square root of 144 \n")
+
+answer13 = "12"
+response13 = input("Answer:")
+
+if (response13 != answer13):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#14 continue to fix
+print("Declaration of Independence?\n")
+fhand = open('declaration.txt')
+count = 0
+for line in fhand:
+    count = count + 1
+answer14 = count
+response14 = input("Answer:")
+
+if (response14 != answer14):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+
+print("Your current score is " + str(score) + " out of 15 \n")
+
+#15 
+print("What is 8% of 30 \n")
+
+answer15 = "2.4"
+response15 = input("Answer:")
+
+if (response15 != answer15):
+    print("Wrong")
+else:
+    print("Correct!")
+    score = score + 1
+    
+print("Your total score is " + str(score) + " out of 15 \n")
+print("Thanks for playing {}! Bye!".format(name))
